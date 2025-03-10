@@ -1,6 +1,7 @@
 body{
     width: 100vw;
-    overflow-x: hidden;
+   overflow-x: hidden;
+   
 }
 
 /* Membuat elemen loader */
@@ -38,7 +39,7 @@ body{
 }
 .top{
     background-color: #fccbaa;
-    width: 100vw;
+    width: 110vw;
     height: 14vh;
 }
 .mainText{
@@ -49,6 +50,7 @@ body{
         position: relative;
         left: 15vw;
         bottom: 62vh;
+        z-index: 3;
 }
 .imageLogo{
     width: 29vw;
@@ -79,7 +81,17 @@ body{
 }
 
 /*page 1*/
-
+.about{
+    position: relative;
+    left: 32vw;
+    width: 20vw;
+    
+    bottom: 60vh;
+    padding: 3vw;
+    background-color:#fccbaa;
+    font-size: 2.23vh;
+    
+}
 /*option*/
 .option{
     display: flex;
@@ -89,8 +101,37 @@ body{
     left: 5vw;
     top: -15vh;
     z-index: 2;
-    
+}
+.char1{
+    transition: transform 0.5s ease;
+}
+.char2{
+    transition: transform 0.5s ease;
+}
+.char3{
+    transition: transform 0.5s ease;
+}
+.char4{
+    transition: transform 0.5s ease;
+}
+.char5{
+    transition: transform 0.5s ease;
+}
+.char1:hover{
+    transform: translateY(-6vw);
+}
 
+.char2:hover{
+    transform: translateY(-6vw);
+}
+.char3:hover{
+    transform: translateY(-6vw);
+}
+.char4:hover{
+    transform: translateY(-6vw);
+}
+.char5:hover{
+    transform: translateY(-6vw);
 }
 
 .page1{
@@ -100,20 +141,27 @@ body{
 .imageMainDiv{
     display: flex;
     flex-direction: column;
-    width: 70vw;
-
+    width: 40vw;
+    
 }
 .imageMain{
     width: 90vw;
+    position: relative;
     
 }
 .rightBar{
     background-color: #fda3d7;
-    width: 30vw;
+    width: 70vw;
+    position: relative;
+    left: 30vw;
+    transition: transform 0.5s ease;
+}
+.rightBar:hover{
+    transform: translateX(-30vw);
 }
 .crop{
     width: 24vw;
-    height: 24vw;
+    height: 21vw;
     overflow: hidden;
     position: relative;
     left: 3.5VW;
@@ -121,8 +169,66 @@ body{
 }
 .pageImageMini{
    
-    width: 100%;
+    width: 90%;
     height: auto;
+}
+
+/*about*/
+.yori{
+    position: relative;
+    bottom: 51vh;
+    left: 5vw;
+    width: 56vw;
+    background-color: #9DBEE4;
+    z-index: 4;
+    padding: 2%;
+    padding-bottom: 2vh;
+    font-size: 1vw;
+    border-radius: 10px;
+}
+.kino{
+    position: relative;
+    bottom: 48vh;
+    left: 5vw;
+    width: 56vw;
+    background-color: #FF92AF;
+    z-index: 4;
+    padding: 2%;
+    font-size: 1vw;
+    border-radius: 10px;
+}
+.aki{
+    position: relative;
+    bottom: 48vh;
+    left: 5vw;
+    width: 56vw;
+    background-color: #5EE4CB;
+    z-index: 4;
+    padding: 2%;
+    font-size: 1vw;
+    border-radius: 10px;
+}
+.mari{
+    position: relative;
+    bottom: 45vh;
+    left: 5vw;
+    width: 56vw;
+    background-color: #FF6F66;
+    z-index: 4;
+    padding: 2%;
+    font-size: 1vw;
+    border-radius: 10px;
+}
+.tachibana{
+    position: relative;
+    bottom: 43vh;
+    left: 5vw;
+    width: 56vw;
+    background-color: #FFEA15;
+    z-index: 4;
+    padding: 2%;
+    font-size: 1vw;
+    border-radius: 10px;
 }
 
 /*page 2*/
@@ -146,6 +252,8 @@ body{
     left: 6vw;
     bottom: 110vh;
 }
+
+
 .backAnime{
     width: 100vw;
     background-color: #ffffff;
@@ -198,10 +306,10 @@ iframe{
 }
 
 
-/*page 4*/
+/*page 4*/ 
 .end{
     background-color: black;
-    height: 10vh;
+    height: 13vh;
     width: 100vw;
     margin-bottom: -1vh;
 }
